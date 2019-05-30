@@ -17,4 +17,6 @@ $(document).ready(function() {
         width : w+"px",
         height : h+"px"
     });
+    
+    console.log("help");
 });
