@@ -1,4 +1,4 @@
-.background {
+#background {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -6,8 +6,13 @@
     justify-content: center;
 }
 
+#frontPage {
+    position: absolute;
+    font-family: "Times New Roman", 
+}
+
 .box {
-    background-color: red;
+    background-color: blue;
     width: 500px;
     height: 500px;
     margin: 10px;
