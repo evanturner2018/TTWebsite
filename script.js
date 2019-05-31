@@ -33,13 +33,16 @@ $(document).ready(function() {
         }, 1000);
         $("img").animate({
             opacity : .1
-        }, 1000, build());
+        }, 1000);
+        $("#scrollButton").fadeIn(1000);
     });
 
-    
+    $(window).scroll(function() {
+        let pos = $(window).scrollTop();
+        if(pos == 0) {
+            $("#scrollButton").fadeIn();
+        } else {
+            $("#scrollButton").fadeOut();
+        }
+    });
 });
-
-//finish building the rest of the page after logo fades in
-function build() {
-    
-}

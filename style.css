@@ -23,6 +23,7 @@
 
 body {
     margin: 0px;
+    border: 0px;
 }
 
 p {
@@ -40,6 +41,26 @@ img {
 .section {
     width: 100%;
     height: 1000px;
-    background-color: gray;
+    background-color: rgb(190, 190, 190);
     display: block;
+}
+
+img, #frontPage {
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#scrollButton {
+    position: fixed;
+    display: none;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    font-stretch: ultra-expanded;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
 }
