@@ -4,6 +4,7 @@ $(document).ready(function() {
     let w = $(window).width();
 
     $("#background").append("<img src=\"H_T.jpg\"></img>");
+    $("#background").css("height", h+"px");
 
     //adds an element called front page that will hold content for front page
     $("#background").append("<div id=\"frontPage\">&Theta;&Tau;</div>");
@@ -32,8 +33,13 @@ $(document).ready(function() {
         }, 1000);
         $("img").animate({
             opacity : .1
-        }, 1000);
+        }, 1000, build());
     });
 
     
 });
+
+//finish building the rest of the page after logo fades in
+function build() {
+    
+}
