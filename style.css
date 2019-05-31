@@ -27,3 +27,10 @@ p {
     width : 300px;
     text-align: center;
 }
+
+img {
+    width: 500px;
+    opacity: 0;
+    position: absolute;
+    top: 175px;
+}
