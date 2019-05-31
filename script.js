@@ -10,8 +10,24 @@ $(document).ready(function() {
     $("#frontPage").css("opacity","0")
         .css("top","300px");
 
+    $("#frontPage").append("<p>Sigma Chapter</p>");
+    $("p").css("font-size","25px")
+        .css("color", "gray")
+        .css("opacity", "0")
+        .css("top","65px")
+        .css("position", "absolute")
+        .css("width", "150px")
+        .css("right", "-10px");
+
     $("#frontPage").animate({
         top : "250px",
         opacity : "1"
-    }, 1000);
+    }, 1000, function() {
+        $("p").animate({
+            opacity : 1,
+            top : "75px"
+        }, 1000);
+    });
+
+    
 });
