@@ -62,14 +62,16 @@ img, #frontPage {
     margin: 0px;
     font-stretch: ultra-expanded;
     text-decoration: none;
+    opacity: .25;
 }
 
 #instaButton {
     position: fixed;
     display: none;
     top: 10px;
-    left: 10px;
+    right: 10px;
     width: 50px;
+    opacity: .25;
 }
 
 a.container {
