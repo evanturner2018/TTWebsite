@@ -3,7 +3,7 @@ $(document).ready(function() {
     let h = $(window).height();
     let w = $(window).width();
 
-    $("#background").append("<img src=\"H_T.jpg\"></img>");
+    $("#background").append("<img src=\"H_T.jpg\" id=\"HT\"></img>");
     $("#background").css("height", h+"px");
 
     //adds an element called front page that will hold content for front page
@@ -31,18 +31,21 @@ $(document).ready(function() {
             opacity : 1,
             top : "75px"
         }, 1000);
-        $("img").animate({
+        $("#HT").animate({
             opacity : .1
         }, 1000);
         $("#scrollButton").fadeIn(1000);
     });
 
+    //center the scroll button
+    $("#scrollButton").css("left",w/2-$(this).width()/2+"px");
+
     $(window).scroll(function() {
         let pos = $(window).scrollTop();
         if(pos == 0) {
-            $("#scrollButton").fadeIn();
+            $("#scrollButton").slideDown();
         } else {
-            $("#scrollButton").fadeOut();
+            $("#scrollButton").slideUp();
         }
     });
 });
