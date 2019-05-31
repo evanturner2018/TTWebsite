@@ -8,7 +8,9 @@
 
 #frontPage {
     position: absolute;
-    font-family: 500px "Times New Roman", "serif";
+    text-align: center;
+    font-size: 100px;
+    top: 0px;
 }
 
 .box {
@@ -20,9 +22,4 @@
 
 body {
     margin: 0px;
-}
-
-h1 {
-    position: absolute;
-    top: 0px;
 }

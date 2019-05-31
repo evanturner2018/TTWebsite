@@ -4,14 +4,14 @@ $(document).ready(function() {
     let w = $(window).width();
 
     //adds an element called front page that will hold content for front page
-    $("#background").append("<div id=frontPage></div>");
+    $("#background").append("<div id=\"frontPage\">TT</div>");
 
-    //front page should cover the starting screen
-    $("#frontPage").css("background-color","blue")
-        .css("width",w+"px")
-        .css("height",h+"px");
+    //start just below center and invisible
+    $("#frontPage").css("opacity","0")
+        .css("top","300px");
 
-    $("#frontPage").append("<h1>Head</h1>");
-    
-    console.log($("#frontPage").height());
+    $("#frontPage").animate({
+        top : "250px",
+        opacity : "1"
+    }, 1000);
 });
