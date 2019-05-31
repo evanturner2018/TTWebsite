@@ -38,14 +38,16 @@ $(document).ready(function() {
     });
 
     //center the scroll button
-    $("#scrollButton").css("left",w/2-$(this).width()/2+"px");
+    $("#scrollButton").css("left",w/2-20+"px");
 
     $(window).scroll(function() {
         let pos = $(window).scrollTop();
         if(pos == 0) {
             $("#scrollButton").slideDown();
+            $("#instaButton").fadeOut();
         } else {
             $("#scrollButton").slideUp();
+            $("#instaButton").fadeIn();
         }
     });
 });

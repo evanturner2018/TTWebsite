@@ -55,7 +55,7 @@ img, #frontPage {
 #scrollButton {
     position: fixed;
     display: none;
-    bottom: 0px;
+    bottom: -10px;
     width: 50px;
     text-align: center;
     font-size: 25px;
@@ -64,9 +64,17 @@ img, #frontPage {
     text-decoration: none;
 }
 
+#instaButton {
+    position: fixed;
+    display: none;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
 a.container {
     display: flex;
-    justify-content: space-around;
+    justify-items: space-around;
     flex-direction: row;
     width: 100%;
 }
