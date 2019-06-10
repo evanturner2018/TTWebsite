@@ -13,8 +13,8 @@ $(document).ready(function() {
     $("#frontPage").css("opacity","0")
         .css("top","300px");
 
-    $("#frontPage").append("<p>Sigma Chapter</p>");
-    $("p").css("font-size","25px")
+    $("#frontPage").append("<p id=\"subHead\">Sigma Chapter</p>");
+    $("#subHead").css("font-size","25px")
         .css("color", "gray")
         .css("opacity", "0") //starts invisible, then it'll fade in
         .css("top","65px") //got this number by guessing
@@ -27,7 +27,7 @@ $(document).ready(function() {
         opacity : "1"
     }, 1000, function() {
         //fade in the "sigma chapter" and image together
-        $("p").animate({
+        $("#subHead").animate({
             opacity : 1,
             top : "75px"
         }, 1000);
@@ -50,4 +50,5 @@ $(document).ready(function() {
             $("#instaButton").fadeIn();
         }
     });
+
 });
