@@ -11,19 +11,19 @@ $(document).ready(function() {
 
     //start just below center and invisible
     $("#frontPage").css("opacity","0")
-        .css("top","300px");
+        .css("font-size",h/4+"px");
 
     $("#frontPage").append("<p id=\"subHead\">Sigma Chapter</p>");
     $("#subHead").css("font-size","25px")
         .css("color", "gray")
         .css("opacity", "0") //starts invisible, then it'll fade in
-        .css("top","65px") //got this number by guessing
+        //.css("top","65px") //got this number by guessing
         .css("position", "absolute")
         .css("width", "150px")
         .css("right", "-10px"); //idk why -10 but it wasn't centered
 
     $("#frontPage").animate({
-        top : "250px",
+        //top : "250px",
         opacity : "1"
     }, 1000, function() {
         //fade in the "sigma chapter" and image together
@@ -49,6 +49,14 @@ $(document).ready(function() {
             $("#scrollButton").slideUp();
             $("#instaButton").fadeIn();
         }
+    });
+
+    //recalculate positioning
+    $(window).resize(function() {
+        h = $(window).height();
+        w = $(window).width();
+        $("#background").css("height", h+"px");
+        $("#frontPage").css("font-size",h/4+"px");
     });
 
 });
