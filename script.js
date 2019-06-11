@@ -14,13 +14,13 @@ $(document).ready(function() {
         .css("font-size",h/4+"px");
 
     $("#frontPage").append("<p id=\"subHead\">Sigma Chapter</p>");
-    $("#subHead").css("font-size","25%")
+    $("#subHead").css("font-size","20%")
         .css("color", "gray")
         .css("opacity", "0") //starts invisible, then it'll fade in
         //.css("top","65px") //got this number by guessing
         .css("position", "absolute")
-        .css("width", "150px")
-        .css("right", "-10px"); //idk why -10 but it wasn't centered
+        .css("width", "100%")
+        /*.css("right", "-10px")*/; //idk why -10 but it wasn't centered
 
     $("#frontPage").animate({
         //top : "250px",
@@ -29,7 +29,7 @@ $(document).ready(function() {
         //fade in the "sigma chapter" and image together
         $("#subHead").animate({
             opacity : 1,
-            top : "75px"
+            top : "65%"
         }, 1000);
         $("#HT").animate({
             opacity : .1
