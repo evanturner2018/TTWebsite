@@ -17,13 +17,10 @@ $(document).ready(function() {
     $("#subHead").css("font-size","20%")
         .css("color", "gray")
         .css("opacity", "0") //starts invisible, then it'll fade in
-        //.css("top","65px") //got this number by guessing
         .css("position", "absolute")
-        .css("width", "100%")
-        /*.css("right", "-10px")*/; //idk why -10 but it wasn't centered
+        .css("width", "100%");
 
     $("#frontPage").animate({
-        //top : "250px",
         opacity : "1"
     }, 1000, function() {
         //fade in the "sigma chapter" and image together
@@ -57,7 +54,6 @@ $(document).ready(function() {
         w = $(window).width();
         $("#background").css("height", h+"px");
         $("#frontPage").css("font-size",h/4+"px");
-        $("#")
     });
 
 });

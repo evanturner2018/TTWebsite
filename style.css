@@ -10,7 +10,7 @@
 
 #frontPage {
     position: absolute;
-    align-items: center;
+    text-align: center;
     top: 25%;
     width: 100%;
 }
