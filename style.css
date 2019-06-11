@@ -43,8 +43,6 @@ body {
 
 .section {
     width: 100%;
-    height: 750px;
-    background-color: rgb(190, 190, 190);
     display: block;
 }
 
@@ -88,35 +86,178 @@ a.container {
 }
 
 h1 {
-    padding: 50px;
+    padding: 50px 0 0 0;
     margin: 0px;
     border: 0px;
     letter-spacing: 7px;
     text-align: center;
 }
 
-p {
-    font-size: 15px;
-    padding: 25px;
-    letter-spacing: 2px;
+hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
 }
 
-#Corey, #Morty {
+h2 {
+    margin: 50px 0 0 0;
+}
+
+.subText {
+    font-size: 15px;
+    padding: 20px;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+}
+
+#Corey, #Morty, #fries, #house {
     border-radius: 8px;
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
 }
 
 #Morty {
-    background: url(Morty.jpeg) 50% 10% no-repeat;
+    background: url(Morty.jpeg) 50% 15% no-repeat;
     width: 90%;
-    height: 500px;
+    height: 300px;
+    background-size: 100% auto;
+}
+
+#fries {
+    background: url(fries.jpg) 50% 20% no-repeat;
+    width: 90%;
+    height: 350px;
+}
+
+#house {
+    background: url(house.PNG) 50% 10% no-repeat;
+    width: 90%;
+    height: 325px;
+    background-size: 100% auto;
 }
 
 .dual {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 50% auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     justify-items: center;
+}
+
+#intro {
+    background-color: rgb(190, 190, 190);
+    padding-bottom: 50px;
+}
+
+#rush {
+    background: url(ChopShop.jpeg) 25% 20% no-repeat;
+    background-color: black;
+    Color: white;
+    height: 500px;
+}
+
+#rushTitle {
+    letter-spacing: 30px;
+}
+
+#contact {
+    background-color: rgb(230,230,230);
+}
+
+.face {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 50px;
+    position: relative;
+    color: red;
+    opacity: 0;
+}
+
+#abe {
+    left: 28px;
+    top: 119.5px;
+}
+
+#gaven {
+    left: 105px;
+    top: 70.5px;
+}
+
+#evan {
+    left: 191px;
+    top: 39.5px;
+}
+
+#wang {
+    left: 222px;
+    top: -50.5px;
+}
+
+#stoner {
+    left: 272px;
+    top: -68.5px;
+}
+
+#drew {
+    left: 330px;
+    top: -125.5px;
+}
+
+#breetz {
+    left: 374px;
+    top: -167.5px;
+}
+
+#collin {
+    left: 417px;
+    top: -236.5px;
+}
+
+#reid {
+    left: 450px;
+    top: -626.5px;
+}
+
+#jacob {
+    left: 469px;
+    top: -385.5px;
+}
+
+#joe {
+    left: 510px;
+    top: -661.5px;
+}
+
+#alex {
+    left: 443px;
+    top: -316.5px;
+}
+
+#justin {
+    left: 560px;
+    top: -574.5px;
+}
+
+#noah {
+    left: 630px;
+    top: -491.5px;
+}
+
+#spencer {
+    left: 674px;
+    top: -329.5px;
+}
+
+#ac {
+    left: 714px;
+    top: -404.5px;
+}
+
+#morty {
+    left: 817px;
+    top: -450.5px;
 }
