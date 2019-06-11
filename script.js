@@ -14,7 +14,7 @@ $(document).ready(function() {
         .css("font-size",h/4+"px");
 
     $("#frontPage").append("<p id=\"subHead\">Sigma Chapter</p>");
-    $("#subHead").css("font-size","25px")
+    $("#subHead").css("font-size","25%")
         .css("color", "gray")
         .css("opacity", "0") //starts invisible, then it'll fade in
         //.css("top","65px") //got this number by guessing
@@ -57,6 +57,7 @@ $(document).ready(function() {
         w = $(window).width();
         $("#background").css("height", h+"px");
         $("#frontPage").css("font-size",h/4+"px");
+        $("#")
     });
 
 });
