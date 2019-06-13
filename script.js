@@ -39,12 +39,12 @@ $(document).ready(function() {
         $(this).animate({
             opacity : .7
         }, 200);
-    });
+    }).children().mouseover(false);
     $(".face").mouseout(function() {
         $(this).animate({
             opacity : 0
         }, 200);
-    })
+    }).children().mouseover(false);
 
     //center the scroll button
     $("#scrollButton").css("left",w/2-25+"px");
@@ -62,12 +62,18 @@ $(document).ready(function() {
         }
 
         //enlarge blurb
-        if(pos > 1620 && once) {
+        if(pos > 1800 && once) {
             let message = "Join the brotherhood";
-            $(".blurb").toggleClass("active", true);
-            $(".active").toggleClass("blurb", false);
+            $(".blurb").toggleClass("active");
+            $(".active").toggleClass("blurb");
             $(".active").append(message);
             once = false;
+        }
+        if(pos < 1800 && !once) {
+            once = true;
+            $(".blurb").toggleClass("active");
+            $(".active").toggleClass("blurb");
+            once = true;
         }
     });
 

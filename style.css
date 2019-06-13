@@ -215,6 +215,7 @@ h2 {
     top: 300px;
     position: relative;
     font-size: .5px;
+    text-align: center;
 }
 
 .active {
