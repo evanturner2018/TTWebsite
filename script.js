@@ -50,6 +50,7 @@ $(document).ready(function() {
     $("#scrollButton").css("left",w/2-25+"px");
 
     let once = true;
+    let premier = true;
     //fade button out and insta in on scroll
     $(window).scroll(function() {
         let pos = $(window).scrollTop();
@@ -62,17 +63,20 @@ $(document).ready(function() {
         }
 
         //enlarge blurb
-        if(pos > 1800 && once) {
+        if(pos > $("#rush").position().top - 100 && once) {
             let message = "Join the brotherhood";
             $(".blurb").toggleClass("active");
             $(".active").toggleClass("blurb");
-            $(".active").append(message);
+            if(premier) {
+                $(".active").append(message);
+                premier = false;
+            }
             once = false;
         }
-        if(pos < 1800 && !once) {
+        if(pos < $("#rush").position().top - 100 && !once) {
             once = true;
-            $(".blurb").toggleClass("active");
             $(".active").toggleClass("blurb");
+            $(".blurb").toggleClass("active");
             once = true;
         }
     });
