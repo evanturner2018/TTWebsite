@@ -8,11 +8,51 @@
     height: 100%;
 }
 
+#donate {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    opacity: .7;
+    background-color: black;
+    display: none;
+}
+
 #frontPage {
     position: absolute;
     text-align: center;
     top: 25%;
     width: 100%;
+}
+
+#submit {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    margin-left: 10%;
+    display: none;
+    font-size: 1px;
+}
+
+.dm {
+    color: black;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: scroll;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 100%;
+    margin-bottom: 3px;
+    width: 40px;
+    text-align: justify;
 }
 
 .box {
@@ -68,12 +108,8 @@ img, #frontPage {
 }
 
 #instaButton {
-    position: fixed;
-    display: none;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    opacity: .25;
+    opacity: .9;
+    width: 80%;
 }
 
 a.container {
@@ -109,6 +145,7 @@ h2 {
     letter-spacing: 2px;
     margin: 0px;
     text-align: center;
+    max-width: 500px;
 }
 
 #Corey, #Morty, #fries, #house, #alumni {
@@ -151,6 +188,50 @@ h2 {
     grid-template-columns: 50% auto;
     grid-template-rows: auto auto auto;
     justify-items: center;
+}
+
+#contact {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: 550px;
+    justify-items: center;
+}
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contactTitle {
+    position: absolute;
+    top: 20px;
+}
+
+#one, #two, #three {  
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    color: white;
+}
+
+#one {
+    background: url(Golf.PNG) 50% 50% no-repeat;
+}
+
+#two {
+    background: url(Bowl.PNG) 50% 50% no-repeat;
+}
+
+#three {
+    background: url(Block.PNG) 50% 50% no-repeat;
 }
 
 #intro {
@@ -211,19 +292,20 @@ h2 {
     background-color: rgb(190, 0, 0);
     border-radius: 20px;
     transition: .5s;
-    left: 45%;
     top: 300px;
+    left: 45%;
     position: relative;
     font-size: .5px;
     text-align: center;
+    padding-top: 2px;
 }
 
 .active {
     width: 90%;
     height: 180px;
     transition: 1s;
-    left: 5%;
     opacity: .7;
+    left: 5%;
     background-color: rgb(190, 0, 0);
     border-radius: 20px;
     top: 300px;

@@ -51,15 +51,14 @@ $(document).ready(function() {
 
     let once = true;
     let premier = true;
+
     //fade button out and insta in on scroll
     $(window).scroll(function() {
         let pos = $(window).scrollTop();
         if(pos == 0) {
             $("#scrollButton").slideDown();
-            $("#instaButton").fadeOut();
         } else {
             $("#scrollButton").slideUp();
-            $("#instaButton").fadeIn();
         }
 
         //enlarge blurb
@@ -123,7 +122,6 @@ $(document).ready(function() {
     });
 
     //used to find face positions
-    console.log("screen width: "+$(window).width());
     $("#rush").click(function(e) {
         let x = e.pageX-20 - $("body").offset().left;
         let y = e.pageY-25 - $("body").offset().top;
@@ -131,7 +129,32 @@ $(document).ready(function() {
         //$("#rush").append(str);
     });
 
-    $(window).click(function() {
-        console.log($(window).scrollTop());
+    let uno = true;
+    $(".dm").focusin(function() {
+        $(".dm").animate({
+            width : "75%"
+        }, 300, function() {
+            $("#submit").slideDown(300);
+            $("#submit").animate({
+                fontSize : "13px"
+            });
+        });
+    });
+
+    let input = "";
+    $("#submit").click(function() {
+        $(".dm").each(function() {
+            input += " "+$(this).val();
+        });
+
+        
+
+        $(".dm").each(function() {
+            $(this).val("");
+        });
+    });
+
+    $(".dm").each(function() {
+        $(this).val("");
     });
 });
