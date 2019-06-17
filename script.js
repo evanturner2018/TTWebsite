@@ -33,6 +33,9 @@ $(document).ready(function() {
             opacity : .1
         }, 1000);
         $("#scrollButton").fadeIn(1000);
+        $("#header").animate({
+            opacity : .9
+        }, 1000);
     });
 
     $(".face").mouseover(function() {
@@ -78,6 +81,11 @@ $(document).ready(function() {
             $(".blurb").toggleClass("active");
             once = true;
         }
+
+        //update progress bar
+        let percent = $(document).scrollTop() / $("#contact").position().top;
+        $("#progress").css("width", percent*100+"%");
+        console.log(percent);
     });
 
     //center each tag under face
@@ -121,14 +129,6 @@ $(document).ready(function() {
         });
     });
 
-    //used to find face positions
-    $("#rush").click(function(e) {
-        let x = e.pageX-20 - $("body").offset().left;
-        let y = e.pageY-25 - $("body").offset().top;
-        let str = "<div class=\"sample\" style=\"left:"+x+"px; top:"+y+"px\"></div>";
-        //$("#rush").append(str);
-    });
-
     let uno = true;
     $(".dm").focusin(function() {
         $(".dm").animate({
@@ -147,7 +147,7 @@ $(document).ready(function() {
             input += " "+$(this).val();
         });
 
-        
+
 
         $(".dm").each(function() {
             $(this).val("");

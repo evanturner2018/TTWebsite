@@ -109,7 +109,7 @@ img, #frontPage {
 
 #instaButton {
     opacity: .9;
-    width: 80%;
+    width: 60%;
 }
 
 a.container {
@@ -125,8 +125,9 @@ h1 {
     padding: 50px 0 0 0;
     margin: 0px;
     border: 0px;
-    letter-spacing: 7px;
+    letter-spacing: 15px;
     text-align: center;
+    font-size: 50px;
 }
 
 hr {
@@ -136,11 +137,12 @@ hr {
 }
 
 h2 {
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
+    font-size: 40px;
 }
 
 .subText {
-    font-size: 15px;
+    font-size: 20px;
     padding: 20px;
     letter-spacing: 2px;
     margin: 0px;
@@ -153,6 +155,7 @@ h2 {
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 50px;
+    max-width: 400px;
 }
 
 #Morty {
@@ -293,19 +296,31 @@ h2 {
     border-radius: 20px;
     transition: .5s;
     top: 300px;
-    left: 45%;
     position: relative;
     font-size: .5px;
     text-align: center;
     padding-top: 2px;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#centaur {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+
 }
 
 .active {
     width: 90%;
-    height: 180px;
+    height: 150px;
     transition: 1s;
     opacity: .7;
-    left: 5%;
     background-color: rgb(190, 0, 0);
     border-radius: 20px;
     top: 300px;
@@ -315,4 +330,47 @@ h2 {
     color: white;
     padding-top: 20px;
     font-size: 15px;
+    max-width: 700px;
+    justify-self: center;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: white;
+    opacity: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-items: center;
+    font-size: 15px;
+    align-items: center;
+    padding: 0px;
+    border: 0px;
+}
+
+.tab {
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    transition: .3s;
+    width: 100%;
+}
+
+.tab:hover {
+    transition: .3s;
+    background-color: rgba(190, 0, 0, .25);
+}
+
+#progress {
+    position: fixed;
+    margin: 0px;
+    left: 0px;
+    width: 0%;
+    color: rgb(190, 0, 0);
+    top: 27px;
+    size: 30px;
 }
