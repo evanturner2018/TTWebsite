@@ -332,6 +332,7 @@ h3 {
     font-size: 15px;
     max-width: 700px;
     justify-self: center;
+    z-index: 1;
 }
 
 #header {
@@ -349,6 +350,7 @@ h3 {
     align-items: center;
     padding: 0px;
     border: 0px;
+    z-index: 2;
 }
 
 .tab {
@@ -373,4 +375,5 @@ h3 {
     color: rgb(190, 0, 0);
     top: 27px;
     size: 30px;
+    z-index: 3;
 }
